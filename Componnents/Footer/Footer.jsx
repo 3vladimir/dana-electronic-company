@@ -31,8 +31,8 @@ function App() {
                   style={{ padding: "0" }}
                   className="footerItems footerBrandText"
                 >
-                  شرکت دانا الکرتونیک آرمین،در سال 1402 در جهت نصب اتوماسیون
-                  گلخانه تاسیس شد
+                  شرکت دانا الکترونیک آرمین در سال 1402 در شهر نجف آباد اصفهان و
+                  با هدف نصب و راه اندازی اتوماسیون های صنعتی راه اندازی شد
                 </p>
               </li>
               <li className="footerColumns footerWithUs">

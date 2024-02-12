@@ -1,0 +1,23 @@
+.contactUsOuterContainer{
+    padding: 4em 0 15em 0;
+    background-color: rgb(252, 233, 233);
+}
+
+.contactUsInnerContainer{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contactUsitems{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: large;
+    padding-top: 1em;
+}
+
+.contactUsIcons{
+    width: 20%;
+    border-radius: 70px;
+}

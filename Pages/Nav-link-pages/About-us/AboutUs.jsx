@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import Header from "../../../Componnents/Header/Header";
 import Footer from "../../../Componnents/Footer/Footer";
 import "./AboutUs.scss";
+import Title from '../../../Componnents/Title/Title'
 
 function Main() {
   return (
@@ -13,8 +14,7 @@ function Main() {
       <div className="aboutUsOuterContainer">
         <main>
           <div className="aboutUsInnerContainer">
-            <h1 style={{ textAlign: "center" }}>درباره ما</h1>
-            <article>
+            <article> 
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Distinctio sit, commodi eius quidem, expedita, vitae numquam
               doloribus rem magni nihil corrupti ipsa quas. Repellat omnis
@@ -38,6 +38,9 @@ function Main() {
 function App() {
   return (
     <>
+    <Title>
+      درباره ما
+    </Title>
       <Header />
       <Main />
       <Footer />

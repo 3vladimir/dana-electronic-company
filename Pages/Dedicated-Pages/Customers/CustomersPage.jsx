@@ -6,6 +6,8 @@ import Header from "../../../Componnents/Header/Header";
 import Footer from "../../../Componnents/Footer/Footer";
 import "./CustomerPage.scss";
 import backgroundImage from "../../../Images/customerPageBackgound.jpg";
+import Title from '../../../Componnents/Title/Title'
+
 
 function Main() {
   const currentCustomerPersonalInformations = window.localStorage.getItem(
@@ -63,6 +65,9 @@ function Main() {
 function App() {
   return (
     <>
+    <Title>
+      بخش مشتریان
+    </Title>
       <Header />
       <Main />
       <div style={{ isolation: "isolate" }}>

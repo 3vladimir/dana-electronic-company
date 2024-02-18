@@ -12,6 +12,7 @@ import axios from "axios";
 import FormHelperText from "@mui/material/FormHelperText";
 import Snackbar from "@mui/material/Snackbar";
 import Alert from "@mui/material/Alert";
+import Title from '../../../Componnents/Title/Title'
 
 function Main() {
   /*define refs*/
@@ -433,6 +434,9 @@ function Main() {
 function App() {
   return (
     <>
+    <Title>
+      ثبت نام مشتریان
+    </Title>
       <Main />
     </>
   );

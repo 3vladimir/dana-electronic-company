@@ -4,6 +4,8 @@
 import * as React from "react";
 import Header from "../../../Componnents/Header/Header";
 import Footer from "../../../Componnents/Footer/Footer";
+import Title from '../../../Componnents/Title/Title'
+
 
 function Main() {
   return (
@@ -20,6 +22,9 @@ function Main() {
 function App() {
   return (
     <>
+    <Title>
+      بخش مدیریت
+    </Title>
       <Header />
       <Main />
       <Footer />

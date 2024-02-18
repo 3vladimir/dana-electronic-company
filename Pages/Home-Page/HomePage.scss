@@ -4,23 +4,14 @@
   height: 50em;
 }
 
-.bannerLogo {
-  // transform:translate(-61em,0) scale(0.9) ;
-  width: 40%;
-  // transform: translate(10em,0) scale(-0.3);
-  // animation: bannerLogo 4s ease-out 0.2s 1 normal forwards paused;
-  // animation: bannerLogo 4s ease-out 0.2s 1 normal forwards running;
-}
-
-@keyframes bannerLogo {
-  0% {
-  }
-  40% {
-    transform: translate(-60em, -2em) scale(0.1);
-  }
-  100% {
-    transform: translate(-60em, -2em) scale(0.9);
-  }
+.bannerTitle {
+  font-family: shabnam-bold;  
+  width: 35%;
+  margin: 0;
+  color: white;
+  font-size: 6em;
+  transform: translate(0, 60px);
+  text-align: center;
 }
 
 .mainInnerContainer {
@@ -85,6 +76,10 @@
   .banner {
     height: 30em;
   }
+  .bannerTitle {
+    font-size: 4em;
+    transform: translate(0, 40px);
+  }
   .mainBoxes {
     padding: 4em;
     box-shadow: 22px 25px 39px -7px rgba(0, 0, 0, 0.74);
@@ -96,7 +91,7 @@
 
 @media screen and (max-width: 900px) {
   .banner {
-    height: 25em;
+    height: 26em;
   }
 }
 
@@ -105,7 +100,7 @@
     padding: 5em 0;
   }
   .banner {
-    height: 20em;
+    height: 25em;
   }
   .mainBoxes {
     padding: 3em;
@@ -133,6 +128,10 @@
   }
   .banner {
     height: 13em;
+  }
+  .bannerTitle {
+    font-size: 1.5em;
+    transform: translate(0, 20px);
   }
   .mainBoxes {
     padding: 1.7em;

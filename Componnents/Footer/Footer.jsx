@@ -31,8 +31,8 @@ function App() {
                   style={{ padding: "0" }}
                   className="footerItems footerBrandText"
                 >
-                  شرکت دانا الکترونیک آرمین در سال 1402 در شهر نجف آباد اصفهان و
-                  با هدف نصب و راه اندازی اتوماسیون های صنعتی راه اندازی شد
+                  شرکت دانا الکترونیک آرمین،تولید کننده ی تخصصی اتوماسیون و
+                  هوشمند سازی گلخانه،سردخانه،پرورش ماهی،مزارع و... می باشد
                 </p>
               </li>
               <li className="footerColumns footerWithUs">
@@ -45,7 +45,7 @@ function App() {
                     <Link to={"/related-website"}>وبسایت های مرتبط</Link>
                   </li>
                   <li className="footerItems footerLinks">
-                    <Link to={"/install-and-execute"}>نصب و اجرا</Link>
+                    <Link to={"/related-softwares"}>نرم افزار های مرتبط</Link>
                   </li>
                 </ul>
               </li>
@@ -59,7 +59,7 @@ function App() {
                     <br />
                     <br />
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d551.6154104336862!2d51.35383380392261!3d32.62737627318783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fbdd51afd60b501%3A0x185b7795e0db608d!2z2YbYrNmBINii2KjYp9iv!5e0!3m2!1sen!2s!4v1704102870361!5m2!1sen!2s"
+                      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1038.742842308744!2d51.35278179130304!3d32.627308468019635!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fbdd5d0acafb293%3A0xff56294aead7140c!2z2LTYsdqp2Kog2K_Yp9mG2Kcg2KfZhNqp2KrYsdmI2YbbjNqpINii2LHZhduM2YY!5e0!3m2!1sen!2sus!4v1707749868599!5m2!1sen!2sus"
                       width="600"
                       height="450"
                       style={{ width: "15em", height: "10em" }}
@@ -72,16 +72,16 @@ function App() {
                     <div className="footerContactListItemsPhone">
                       تلفن :
                       <div style={{ textAlign: "left" }}>
-                        03142655248
+                        03142654534
                         <br />
-                        09371212094
+                        09134361540
                       </div>
                     </div>
                     <li className="footerItems">
                       <div className="footerContactListItemsemail">
                         ایمیل :
                         <div className="f" style={{ textAlign: "left" }}>
-                          ali.amirkaveh79@gmail.com
+                          Deaarminelectronics@gmail.com
                         </div>
                       </div>
                     </li>
@@ -95,31 +95,39 @@ function App() {
                   </li>
                   <li className="footerItems footerSocialNetworks">
                     تلگرام
-                    <img
-                      className="footerIcons"
-                      style={{ clipPath: "circle(50% at 50% 50%)" }}
-                      src={telegram}
-                      alt="telegram"
-                    />
+                    <Link to={"http://t.me/Emh96"}>
+                      <img
+                        className="footerIcons"
+                        style={{ clipPath: "circle(50% at 50% 50%)" }}
+                        src={telegram}
+                        alt="telegram"
+                      />
+                    </Link>
                   </li>
                   <li className="footerItems footerSocialNetworks">
                     واتساپ
-                    <img
-                      className="footerIcons"
-                      style={{ clipPath: "circle(50% at 50% 50%)" }}
-                      src={whatsApp}
-                      alt="whatsApp"
-                    />
+                    <Link to={""}>
+                      <img
+                        className="footerIcons"
+                        style={{ clipPath: "circle(50% at 50% 50%)" }}
+                        src={whatsApp}
+                        alt="whatsApp"
+                      />
+                    </Link>
                   </li>
                   <li className="footerItems footerSocialNetworks">
                     ایتا
-                    <Link to={"https://web.eitaa.com/#@adolfa1889"}>
+                    <Link to={""}>
                       <img className="footerIcons" src={eitaa} alt="eitaa" />
                     </Link>
                   </li>
                   <li className="footerItems footerSocialNetworks">
                     اینستاگرام
-                    <Link to={"https://www.instagram.com/ali_amirkaveh/"}>
+                    <Link
+                      to={
+                        "https://www.instagram.com/dana_electronicarmin?igsh=b2EyeDR4NzZ0ZDVo"
+                      }
+                    >
                       <img
                         className="footerIcons"
                         style={{

@@ -7,12 +7,16 @@ import "./Header.scss";
 import { Menu } from "./Menu/HeaderMenu";
 import { Link } from "react-router-dom";
 import { FaUser } from "react-icons/fa";
+import brandIcon from "../../Images/logo.png";
+
 
 function Title() {
   return (
     <>
       <div className="title">
-        <h1 className="titleText">گروه صنعتی دانا الکترونیک آرمین</h1>
+        <img src={brandIcon} alt="brandIcon" width={"13%"}  />
+        <h2 className="titleText">شرکت دانا الکترونیک آرمین
+        </h2>
       </div>
     </>
   );

@@ -5,18 +5,30 @@ import * as React from "react";
 import "./HomePage.scss";
 import Header from "../../Componnents/Header/Header";
 import Footer from "../../Componnents/Footer/Footer";
-import bannerLogo from "../../Images/bannerLogo.png";
 import { Link } from "react-router-dom";
 import { handleLocalStoarege } from "./Local-storage/HandleLocalStorage";
+import Collapse from "@mui/material/Collapse";
+import Title from "../../Componnents/Title/Title";
 
 function Main() {
   handleLocalStoarege();
+  const [bannerTitlechecked, setBannerTitleChecked] = React.useState(false);
+  React.useEffect(() => {
+    setBannerTitleChecked(true);
+  });
 
   return (
     <>
       <div className="mainOuterContainer">
         <div className="banner">
-          <img className="bannerLogo" src={bannerLogo} alt="bannerLogo" />
+          <h1 className="bannerTitle">
+            <Collapse timeout={3000} in={bannerTitlechecked}>
+              <li>گروه</li>
+              <li>فنی</li>
+              <li>مهندسی</li>
+              <li>حججی</li>
+            </Collapse>
+          </h1>
         </div>
         <div className="mainInnerContainer">
           <main>
@@ -38,6 +50,7 @@ function Main() {
 function App() {
   return (
     <>
+      <Title>صفحه اصلی</Title>
       <Header />
       <Main />
       <Footer />

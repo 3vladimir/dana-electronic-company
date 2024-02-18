@@ -8,27 +8,58 @@ import "./contactUs.scss";
 import telephone from "../../../Images/Icons/telephone.jpg";
 import mobile from "../../../Images/Icons/mobile.png";
 import eitaa from "../../../Images/Icons/eitaa.png";
+import Grow from "@mui/material/Grow";
+import Title from '../../../Componnents/Title/Title'
+
 
 function Main() {
+  const [checked, setChecked] = React.useState(false);
+  React.useEffect(() => {
+    setChecked(true);
+  });
   return (
     <>
       <div className="contactUsOuterContainer">
         <div className="contactUsInnerContainer">
           <main>
-            <h1>تماس با ما</h1>
-            <li className="contactUsitems">
-              <img src={telephone} alt="icon" className="contactUsIcons" />
-              03142655248
-            </li>
-            <li className="contactUsitems">
-              <img src={mobile} alt="icon" className="contactUsIcons" />0
-            </li>
-            <li className="contactUsitems">
-              <img src={mobile} alt="icon" className="contactUsIcons" />0
-            </li>
-            <li className="contactUsitems">
-              <img src={eitaa} alt="icon" className="contactUsIcons" />0
-            </li>
+            <h1 className="contactUsTitle">تماس با گروه فنی مهندسی حججی</h1>
+            آدرس : اصفهان،نجف آباد،خیابان 15 خرداد جنوبی جنب چهار راه
+            <Grow in={checked}>
+              <li className="contactUsitems">
+                <img src={telephone} alt="icon" className="contactUsIcons" />
+                <span className="contactUsNumbers">03142654534</span>
+              </li>
+            </Grow>
+            <Grow in={checked} timeout={1000}>
+              <li className="contactUsitems">
+                <img src={mobile} alt="icon" className="contactUsIcons" />
+                <span className="contactUsNumbers">09131311475</span>
+              </li>
+            </Grow>
+            <Grow in={checked} timeout={2000}>
+              <li className="contactUsitems">
+                <img src={mobile} alt="icon" className="contactUsIcons" />
+                <span className="contactUsNumbers">09134361540</span>
+              </li>
+            </Grow>
+            <Grow in={checked} timeout={3000}>
+              <li className="contactUsitems">
+                <img src={mobile} alt="icon" className="contactUsIcons" />
+                <span className="contactUsNumbers">09130219017</span>
+              </li>
+            </Grow>
+            <Grow in={checked} timeout={4000}>
+              <li className="contactUsitems">
+                <img src={eitaa} alt="icon" className="contactUsIcons" />
+                <span className="contactUsNumbers">09134361540</span>
+              </li>
+            </Grow>
+            <Grow in={checked} timeout={4000}>
+              <li className="contactUsitems">
+                <img src={eitaa} alt="icon" className="contactUsIcons" />
+                <span className="contactUsNumbers">09130219017</span>
+              </li>
+            </Grow>
           </main>
         </div>
       </div>
@@ -39,6 +70,9 @@ function Main() {
 function App() {
   return (
     <>
+    <Title>
+      تماس با ما
+    </Title>
       <Header />
       <Main />
       <Footer />

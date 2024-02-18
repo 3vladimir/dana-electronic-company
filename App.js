@@ -11,16 +11,19 @@ import ContactUs from "./Pages/Nav-link-pages/Contact-us/ContactUs.jsx";
 import ManagersPage from "./Pages/Dedicated-Pages/Managers/ManagersPage.jsx";
 import AgentsPage from "./Pages/Dedicated-Pages/Agents/AgentsPage.jsx";
 import CustomersPage from "./Pages/Dedicated-Pages/Customers/CustomersPage.jsx";
-import InstallAndExecute from "./Pages/Footer-Link-Pages/Install-and-execute/InstallAndExecute.jsx";
+import RealtedSoftwares from "./Pages/Footer-Link-Pages/Related-softwares/RealtedSoftwares.jsx";
 import Products from "./Pages/Footer-Link-Pages/Products/Products.jsx";
 import RelatedWebsites from "./Pages/Footer-Link-Pages/Related-websites/RelatedWebsites.jsx";
 import Articles from "./Pages/Main-Link-Pages/Articles/Articles.jsx";
 import Catalogues from "./Pages/Main-Link-Pages/Catalogues/Catalogues.jsx";
+import ArticlesDispaly from "./Pages/Main-Link-Pages/Articles/articles-display/ArticlesDispaly.jsx";
+import ScrollToTop from "./Componnents/ScrollToTop/ScrollToTop.jsx";
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route exact path="/" element={<HomePage />}></Route>
           <Route
@@ -55,8 +58,8 @@ function App() {
           ></Route>
 
           <Route
-            path="/install-and-execute"
-            element={<InstallAndExecute></InstallAndExecute>}
+            path="/related-softwares"
+            element={<RealtedSoftwares></RealtedSoftwares>}
           ></Route>
           <Route path="/products" element={<Products></Products>}></Route>
           <Route
@@ -66,6 +69,10 @@ function App() {
 
           <Route path="/articles" element={<Articles></Articles>}></Route>
           <Route path="/catalogues" element={<Catalogues></Catalogues>}></Route>
+          <Route
+            path="/articles-display"
+            element={<ArticlesDispaly></ArticlesDispaly>}
+          ></Route>
         </Routes>
       </BrowserRouter>
     </>
